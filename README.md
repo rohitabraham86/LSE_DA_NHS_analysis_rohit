@@ -17,3 +17,16 @@ As you are new to Python, your role on the team is to get started with the data 
     -Were there adequate staff and capacity in the networks?
     -What was the actual utilisation of resources?
     -What possible recommendations does the data provide for the NHS?
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Necessary libraries for the running of code were imported to the Jupyter notebook using the import function. The 3 datasets were imported to the notebook using the appropriate pandas read_() function. None of the datasets were found to have null values. Descriptive statistics were used to find the spread of the data of each dataset using the describe() function. Only the column count_of_appointments in all three data sets were of the data type int64. The count_of_appointments contains the total number of appointments made on a particular day at a particular location.
+The 3 things which we wanted to check were:
+
+                   1.How many locations are there in the dataset?
+This was found by using the ‘national_categories’ dataset. The value_count() function was used first and returned a Series containing counts of unique rows in the dataframe, count()was used to return the number of elements with the specified value. The output was printed using the print()function.
+
+                    2. What are the five locations with the highest number of records?
+The value_count()function was used first and returned a Series containing counts of unique rows in the dataframe and then was sorted using the sort_values function. The output was printed using the print()function.
+
+                    3. How many service settings, context types, national categories, and appointment statuses are there? 
+ The answer to these followed the steps taken for the first question.
