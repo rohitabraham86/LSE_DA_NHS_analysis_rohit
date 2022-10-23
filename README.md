@@ -53,3 +53,16 @@ The appointment_month column was split into month and year using dt.year and dt.
 The total number of records per month can be found by grouping the month and year using groupby() function and using count() function on count_of_appointments column to return the number of records.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                                 Week 4
+
+Create three visualizations indicating the number of appointments per month for service settings, context types, and national categories.
+For this, created 3 subsets, one each for service settings, context types, and national categories.
+For each subset, use the groupby() function to group it by appointment month and the categories (service settings, context types, and national categories).  And then aggregate them with the sum of the count_of_appointments.
+Now create a line plot using seaborn, with appointment_month on the x-axis and count_of_appointments on the y-axis, with hue as the categories (service settings, context types, and national categories).
+
+To visualize the 4 seasons, create a separate data set by choosing only the required month. And then use the groupby()function to group it by appointment month and service_setting.  And then aggregate them with the sum of the count_of_appointments. Now create the line plot using seaborn, with service_setting on the x-axis and count_of_appointments on the y-axis. 
+
+Plots are saved using the plt.savefig().
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
