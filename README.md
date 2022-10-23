@@ -30,6 +30,7 @@ The value_count()function was used first and returned a Series containing counts
 
                     3. How many service settings, context types, national categories, and appointment statuses are there? 
  The answer to these followed the steps taken for the first question.
+ 
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                               Week 3
 
@@ -50,4 +51,5 @@ groupby() was used to group the dataframe by service_setting and sub_icb_locatio
 The appointment_month column was split into month and year using dt.year and dt.month. Using the grouby() function, grouped the year and month column and then using the sum() function, summed the count_of_appointments and sorted it by descending order.
 
 The total number of records per month can be found by grouping the month and year using groupby() function and using count() function on count_of_appointments column to return the number of records.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
