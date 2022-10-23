@@ -18,7 +18,7 @@ As you are new to Python, your role on the team is to get started with the data 
     -What was the actual utilisation of resources?
     -What possible recommendations does the data provide for the NHS?
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                        WEEK 2
+                                                                    WEEK 2
 Necessary libraries for the running of code were imported to the Jupyter notebook using the import function. The 3 datasets were imported to the notebook using the appropriate pandas read_() function. None of the datasets were found to have null values. Descriptive statistics were used to find the spread of the data of each dataset using the describe() function. Only the column count_of_appointments in all three data sets were of the data type int64. The count_of_appointments contains the total number of appointments made on a particular day at a particular location.
 The 3 things which we wanted to check were:
 
@@ -32,7 +32,7 @@ The value_count()function was used first and returned a Series containing counts
  The answer to these followed the steps taken for the first question.
  
  ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-                                                                         Week 3
+                                                                      Week 3
 
 The appointment date column in the actual duration column has to be converted from a string to a datetime format, this was done with the to_datetime() function. Once the format is changed, the first date and the last date can be found using the max() and min() functions. The output can be displayed using the print() function.
 
@@ -54,7 +54,7 @@ The total number of records per month can be found by grouping the month and yea
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-                                                                        Week 4
+                                                                     Week 4
 
 Create three visualizations indicating the number of appointments per month for service settings, context types, and national categories.
 For this, created 3 subsets, one each for service settings, context types, and national categories.
@@ -67,7 +67,7 @@ Plots are saved using the plt.savefig().
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-                                                                          Week 5
+                                                                       Week 5
 
 The tweet dataset was loaded using the read_csv() function. The metadata was explored using the info() function. 5 columns are of object type, 3 columns are of integer type, and 2 are of boolean type. Using the isna().sum() function, it was found that 167 of 1174 entries of ‘tweet_entities_hashtags’ are missing. The column ‘tweet_full_text’ was used to extract all the hashtags using a for loop and was assigned to a variable ‘tags’. This series was then converted to a dataframe using pd.DataFrame() and the unique number of hashtags were found using value_count. The columns of the dataframe were renamed using the rename() function. The records with a count lesser than 10 were removed from the dataframe to create a line plot. The overrepresented hashtags were removed by excluding the count of 41 and above. 
 
