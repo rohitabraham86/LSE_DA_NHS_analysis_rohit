@@ -72,3 +72,13 @@ Plots are saved using the plt.savefig().
 The tweet dataset was loaded using the read_csv() function. The metadata was explored using the info() function. 5 columns are of object type, 3 columns are of integer type, and 2 are of boolean type. Using the isna().sum() function, it was found that 167 of 1174 entries of ‘tweet_entities_hashtags’ are missing. The column ‘tweet_full_text’ was used to extract all the hashtags using a for loop and was assigned to a variable ‘tags’. This series was then converted to a dataframe using pd.DataFrame() and the unique number of hashtags were found using value_count. The columns of the dataframe were renamed using the rename() function. The records with a count lesser than 10 were removed from the dataframe to create a line plot. The overrepresented hashtags were removed by excluding the count of 41 and above. 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+                                                                        Week 6
+                                                                        
+Use the max() & min () function to find the first and last dates in the appointments_regional dataframe. 
+Filter the months to use data from 2021-08 onwards. Create a new dataframe (ar_agg_grpby) and aggregate the total number of appointments using the grouby() and sum() functions.
+Create another dataframe (ar_df) and aggregate the total number of appointments using the grouby() and sum() functions. Create a column in ar_df which calculates the utilization of appointments per day, based on the fact that NHS can handle 1.2million per day. This was done by using the assign() and lambda functions.
+A line plot for total monthly appointments and monthly capacity utilization is plotted using Seaborn. Likewise, the other line plots were done using these dataframe and Seaborn.
+
+Box plots were created using the subset of the national_categories dataframe aggregated and grouped earlier. The second boxplot was created using the not equal (!=) to condition in the service_setting column for General Practice.
+
